@@ -1,8 +1,10 @@
 import React from 'react'
+import {ExploreData} from "../components/MockData/data"
+import { div } from 'motion/react-client'
 
 const Explore = () => {
   return (
-    <div className='container flex flex-col justify-center items-center'>
+    <div className=' flex flex-col justify-center items-center'>
         <div>
             <h1 className='text-[50px] font-mono py-4'>EXPLORE THE CADILLAC LINEUP</h1>
         </div>
@@ -14,12 +16,19 @@ const Explore = () => {
                 <li className=' p-4 px-[100px] border-solid border-2 border-black'><button><a href="">V-SERIES</a></button></li>
             </ul>
         </div>
-        <div className='flex'>
-            <img src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/07-images/lineup-suvs-26-escalade-iql-s.png?imwidth=1600" alt="" />
-            <img src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-escalade-iq-s-v5.png?imwidth=1600" alt="" />
-            <img src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-sedans-celestiq-s-v4.png?imwidth=1600" alt="" />
-            <img src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-26-vistiq-s-v2.png?imwidth=1600" alt="" />
-            <img src="" alt="" />
+        <div className='flex '>
+          {
+            ExploreData.map((data)=>(
+              <div key={data.id}>
+                <div>
+                  <img src={data.img} alt="" />
+                  <h1 className='mt-[30px]'>{data.name}</h1>
+                  <p>{data.text}</p>
+                </div>
+              </div>
+            ))
+          }
+        
             </div>
     </div>
   )
