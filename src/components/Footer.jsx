@@ -44,7 +44,7 @@ const Footer = () => {
         </div >
         <div className='flex flex-col gap-10  justify-center items-center mr-[20px]     lg:gap-10 text-[17px] mt-8 lg:items-start'>
           <p className='text-[10px] py-3 lg:text-[15px]'>Download the myCadillac App* for Apple or Android™</p>
-        <div className='flex w-[105px] justify-center items-center '><img src={footerimg} alt="" />
+        <div className='flex w-[105px] justify-center items-center lg:ml-[40px] '><img src={footerimg} alt="" />
         <img src={footerimg2} alt="" />
         </div>
         </div>
@@ -60,7 +60,7 @@ const Footer = () => {
 
 
         </div>
-        <div className=' p-50 w-auto lg:ml-[90px] '>
+        <div className=' p-5 lg:ml-[90px] lg:p-20 '>
           <img src={footerimg3} alt="" />
         </div>
        
