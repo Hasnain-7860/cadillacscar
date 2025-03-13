@@ -1,5 +1,11 @@
 import { img } from "motion/react-client";
 import { SiMapillary } from "react-icons/si";
+import { IoCarSportOutline } from "react-icons/io5";
+import { CiSearch } from "react-icons/ci";
+import { FaFirstOrder } from "react-icons/fa";
+
+
+
 
 export const ExploreData =[
     {
@@ -58,6 +64,21 @@ export const IconData =[
         id:1,
         name:"FIND A DEALER",
         data:SiMapillary
+    },
+    {
+        id:2,
+        name:"BUILD & BUY",
+        data:IoCarSportOutline
+    },
+    {
+        id:3,
+        name:"SEARCH INVENTORY",
+        data:CiSearch 
+    },
+    {
+        id:4,
+        name:"REQUEST A TEST DRIVE",
+        data:FaFirstOrder
     }
 
 
