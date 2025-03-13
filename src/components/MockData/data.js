@@ -79,7 +79,46 @@ export const IconData =[
         id:4,
         name:"REQUEST A TEST DRIVE",
         data:FaFirstOrder
-    }
+    },
 
+
+]
+export const FooterData =[
+    {
+        id:1,
+        name:"CADILLAC HERITAGE"
+    },
+    {
+        id:2,
+        name:"SUSTAINABILITY"
+    },
+    {
+        id:3,
+        name:"SUPER CRUISE"
+    },
+    {
+        id:4,
+        name:"DIGITAL BROCHURES"
+    },
+    {
+        id:5,
+        name:"CADILLAC FINANCIAL"
+    },
+    {
+        id:6,
+        name:"CONTACT US"
+    },
+    {
+        id:7,
+        name:"RECALLS"
+    },
+    {
+        id:8,
+        name:"BUSINESS TAX DEDUCTIONS"
+    },
+    {
+        id:9,
+        name:"DISASTER RELIEF"
+    },
 
 ]
