@@ -4,6 +4,8 @@ import Home from './components/Home'
 import Feauture from './components/Feauture'
 import Explore from './components/Explore'
 import Icon from './components/Icon'
+import Safety from './components/Safety'
+import Footer from './components/Footer'
 
 
 const App = () => {
@@ -14,6 +16,8 @@ const App = () => {
       <Feauture/>
       <Explore/>
       <Icon/>
+      <Safety/>
+      <Footer/>
     </div>
   )
 }
