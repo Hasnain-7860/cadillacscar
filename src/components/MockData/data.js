@@ -1,4 +1,5 @@
 import { img } from "motion/react-client";
+import { SiMapillary } from "react-icons/si";
 
 export const ExploreData =[
     {
@@ -49,5 +50,15 @@ export const ExploreData =[
         text:"By inquiry only",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-optiq-l-v3.png?imwidth=3000",
         
+    },
+    
+]
+export const IconData =[
+    {
+        id:1,
+        name:"FIND A DEALER",
+        data:SiMapillary
     }
+
+
 ]

@@ -1,5 +1,7 @@
 import React from 'react'
 import { IoHomeOutline } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
+
 
 
 const Navbar = () => {
@@ -11,7 +13,7 @@ const Navbar = () => {
               <h1>Central Houston Cadillac</h1>
             </div>
             <div className='flex'>
-              <ul className='flex justify-center items-center gap-10 text-[20px]'>
+              <ul className='hidden lg:flex justify-center items-center gap-10 text-[20px]'>
                 <li><a href=""> <IoHomeOutline /></a></li>
                 <li><a href=""> NEW</a></li>
                 <li><a href="">Pre-Owned</a></li>
@@ -21,6 +23,8 @@ const Navbar = () => {
                 <li><a href="">About Us</a></li>
       
               </ul>
+              <h1 className='text-[40px] lg:hidden'>< RxHamburgerMenu /></h1>
+
               
             </div>
             </div>
