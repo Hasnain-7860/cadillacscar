@@ -22,8 +22,8 @@ const Feauture = () => {
 
             </ul>
         </div>
-        <div className='border-solid border-2 border-white shad0w-lg mt-[20px] mb-[20px]'>
-           <div className='flex flex-col justify-center items-center px-[200px] py-[50px]'>
+        <div className='   lg:border-solid border-2 border-white shadow-lg mt-[20px] mb-[20px]'>
+           <div className='px-[10px] lg:flex flex-col justify-center items-center px-[200px] py-[50px]'>
             <h1 className='text-[20px]'>2025</h1>
             <h1 className='text-[25px]'>LYRIQ</h1>
             <h1 className='text-[50px] '>2.9% APR FOR 48 MONTHS*</h1>
