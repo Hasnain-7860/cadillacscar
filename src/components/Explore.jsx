@@ -5,16 +5,11 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import ImageSlider from './ImageSlider';
-
-
 
 
 
 
 const Explore = () => {
-
-
   return (
     <div className=' flex flex-col justify-center items-center'>
         <div>
@@ -29,20 +24,21 @@ const Explore = () => {
                 
             </ul>
         </div>
-          <div>
-          <ImageSlider/> 
-              
-          </div>
-                
- 
-          {/* <div className='absolute top-[280%] left-[46vw] z-10 p-[5vh]  flex  items-center gap-5   '>
-                <a className=''  href=""><IoIosArrowBack className='text-[40px] border-solid border-2 border-black ' /></a>
-                <a href=""><IoIosArrowForward className='text-[40px] border-solid border-2 border-black' />
-                </a>
-                </div> */}
-               
+        {/* <div className='bg-black flex overflow-auto w-[100%] h-[300px] '>
+          {
+            ExploreData.map((data)=>(
+              <div  key={data.id}>
+                <div className=''>
+                  <img   src={data.img} alt="" />
+                  <h1 className=''>{data.name}</h1>
+                  <p>{data.text}</p>
+                </div>
+              </div>
+            ))
+          } */}
+          {/* </div> */}
            
-            {/* <div className=''>
+            <div className=''>
               <div className='flex w-[100%] h-[400px] overflow-auto  display-none  '>
                 <div className='absolute top-[280%] left-[46vw] z-10 p-[5vh]  flex  items-center gap-5   '>
                 <a className=''  href=""><IoIosArrowBack className='text-[40px] border-solid border-2 border-black ' /></a>
@@ -61,7 +57,7 @@ const Explore = () => {
  
                 
               </div>
-            </div> */}
+            </div>
     </div>
    
   )
