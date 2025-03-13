@@ -60,7 +60,7 @@ const Footer = () => {
 
 
         </div>
-        <div className=' flex justify-center items-center w-[150px] mt-5  md:ml-[230px] '>
+        <div className=' p-50 w-auto lg:ml-[90px] '>
           <img src={footerimg3} alt="" />
         </div>
        
