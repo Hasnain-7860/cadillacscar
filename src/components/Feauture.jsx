@@ -11,7 +11,7 @@ const Feauture = () => {
             <h1 className='text-[40px] font-semibold ' >FEATURED OFFERS</h1>
         </div>
         <div>
-            <ul className='flex justify-center items-center gap-10 text-[15px]'>
+            <ul className='flex justify-center gap-5 lg:flex justify-center items-center gap-10 text-[15px]'>
                 <li><a href="">LYRIQ</a></li>
                 <li><a href=""></a>LYRIQ</li>
                 <li><a href=""></a>OPTIQ</li>

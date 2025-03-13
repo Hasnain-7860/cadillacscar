@@ -16,7 +16,7 @@ const Explore = () => {
             <h1 className='text-[50px] font-mono py-4'>EXPLORE THE CADILLAC LINEUP</h1>
         </div>
         <div>
-            <ul className=' flex overflow-auto display-none md:flex lg:flex flex-center items-center gap-20 container '>
+            <ul className='   flex flex-col  lg:flex flex-center items-center gap-20 container '>
                 <li className=' p-4 px-[100px] border-solid border-2 border-black text-black hover:bg-black  hover:text-white '><button><a href="">ELECTRIC</a></button></li>
                 <li className=' p-4 px-[100px] border-solid border-2 border-black text-black  hover:bg-black hover:text-white ' ><button><a href="">SUVS</a></button></li>
                 <li className='p-4 px-[100px] border-solid border-2 text-black border-black  hover:bg-black  hover:text-white '> <button><a href="">SEDANS</a></button></li>
@@ -40,11 +40,7 @@ const Explore = () => {
            
             <div className=''>
               <div className='flex w-[100%] h-[400px] overflow-auto  display-none  '>
-                <div className='absolute top-[280%] left-[46vw] z-10 p-[5vh]  flex  items-center gap-5   '>
-                <a className=''  href=""><IoIosArrowBack className='text-[40px] border-solid border-2 border-black ' /></a>
-                <a href=""><IoIosArrowForward className='text-[40px] border-solid border-2 border-black' />
-                </a>
-                </div>
+              
 
                 <img src='https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/07-images/lineup-suvs-26-escalade-iql-l.png?imwidth=3000'   alt="" />
                 <img src='https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-escalade-iq-l-v6.png?imwidth=3000'   alt="" />
@@ -57,6 +53,11 @@ const Explore = () => {
  
                 
               </div>
+              <div className='  z-10 p-[5vh]  flex  items-center gap-5  justify-center  '>
+                <a className=''  href=""><IoIosArrowBack className='text-[40px] border-solid border-2 border-black ' /></a>
+                <a href=""><IoIosArrowForward className='text-[40px] border-solid border-2 border-black' />
+                </a>
+                </div>
             </div>
     </div>
    
