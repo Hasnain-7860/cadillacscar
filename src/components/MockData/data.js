@@ -100,25 +100,25 @@ export const FooterData =[
         id:4,
         name:"DIGITAL BROCHURES"
     },
-    {
-        id:5,
-        name:"CADILLAC FINANCIAL"
-    },
-    {
-        id:6,
-        name:"CONTACT US"
-    },
-    {
-        id:7,
-        name:"RECALLS"
-    },
-    {
-        id:8,
-        name:"BUSINESS TAX DEDUCTIONS"
-    },
-    {
-        id:9,
-        name:"DISASTER RELIEF"
-    },
+    // {
+    //     id:5,
+    //     name:"CADILLAC FINANCIAL"
+    // },
+    // {
+    //     id:6,
+    //     name:"CONTACT US"
+    // },
+    // {
+    //     id:7,
+    //     name:"RECALLS"
+    // },
+    // {
+    //     id:8,
+    //     name:"BUSINESS TAX DEDUCTIONS"
+    // },
+    // {
+    //     id:9,
+    //     name:"DISASTER RELIEF"
+    // },
 
 ]
