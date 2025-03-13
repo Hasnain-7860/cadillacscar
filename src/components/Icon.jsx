@@ -16,7 +16,6 @@ const Icon = () => {
                         <div>
                             <h1>{data.name}</h1>
                             <data.data/>
-                        
                         </div>
                     </div>
                 ))}

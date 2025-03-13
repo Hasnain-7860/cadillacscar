@@ -5,7 +5,7 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import Slider from 'react-slick';
+import ImageSlider from './ImageSlider';
 
 
 
@@ -14,45 +14,7 @@ import Slider from 'react-slick';
 
 const Explore = () => {
 
-  const setting ={
-    dots: true,
-    // arrow:false,
-    infinite: true,
-    speed: 500,
-    // slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplaySpeed:2000,
-    // cssEase:"linear",
-    pauseHover:true,
-    pauseOnFocus:true,
-    responsive:[
-      {
-        breakpoint: 1224,
-        settings:{
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite:true,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings:{
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide:2.
-         
-        },
-      },
-      {
-        breakpoint: 640,
-        settings:{
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      }
-    ],
-  }
-  
+
   return (
     <div className=' flex flex-col justify-center items-center'>
         <div>
@@ -67,28 +29,12 @@ const Explore = () => {
                 
             </ul>
         </div>
-        
-        <div >
-          
-         <Slider {...setting}>
-          {
-            ExploreData.map((data)=>(
-              <div key={data.id} >
-                  <img   src={data.img} alt="" />
-                  <div>
-                  <h1 >{data.name}</h1>
-                  <p>{data.text}</p>
-                  </div>
-              </div>
-                  
-                
-                 
-                  
-            ))
-          }
-          </Slider>
-         
+          <div>
+          <ImageSlider/> 
+              
           </div>
+                
+ 
           {/* <div className='absolute top-[280%] left-[46vw] z-10 p-[5vh]  flex  items-center gap-5   '>
                 <a className=''  href=""><IoIosArrowBack className='text-[40px] border-solid border-2 border-black ' /></a>
                 <a href=""><IoIosArrowForward className='text-[40px] border-solid border-2 border-black' />
