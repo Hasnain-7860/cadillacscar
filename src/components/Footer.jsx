@@ -8,6 +8,8 @@ import footerimg3 from "../assets/footerimg3.svg"
 import { FaFacebook } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import { FaInstagramSquare } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
+
 
 
 
@@ -53,7 +55,7 @@ const Footer = () => {
           <div className='flex gap-10 w-[150px] mt-[15px]'>
             <FaFacebook />
           <BsYoutube />
-          <FaInstagramSquare />
+          <GrInstagram />
           </div>
 
 
