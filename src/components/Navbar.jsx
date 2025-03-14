@@ -1,6 +1,7 @@
 import React from 'react'
 import { IoHomeOutline } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,13 +15,14 @@ const Navbar = () => {
             </div>
             <div className='flex'>
               <ul className='hidden lg:flex justify-center items-center gap-10 text-[20px]'>
-                <li><a href=""> <IoHomeOutline /></a></li>
-                <li><a href=""> NEW</a></li>
-                <li><a href="">Pre-Owned</a></li>
-                <li><a href="">Service & Parts</a></li>
-                <li><a href="">Specials</a></li>
-                <li><a href="">Finance</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href=""> <Link to='/' >Home</Link>  </a></li>
+                {/* <li onClick={()=>{setMenu("shop")}}> <Link style={{textDecoration:'none'}} to='/Shop'>Shop</Link>  {menu==="shop"?  <hr /> : <></> } </li> */}
+                <li><a href=""><Link to='/New'>NEW</Link> </a></li>
+                <li><a href=""> <Link to='/Pre'>Pre-Owned</Link> </a></li>
+                <li><a href=""> <Link to='/Service'>Service & Parts</Link></a></li>
+                <li><a href=""> <Link to='/Specials'>Specials</Link></a></li>
+                <li><a href=""> <Link to='/Finance'>Finance</Link></a></li>
+                <li><a href=""> <Link to='/About'>About Us</Link></a></li>
       
               </ul>
               <h1 className='text-[40px] lg:hidden'>< RxHamburgerMenu /></h1>

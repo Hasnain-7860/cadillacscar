@@ -6,18 +6,34 @@ import Explore from './components/Explore'
 import Icon from './components/Icon'
 import Safety from './components/Safety'
 import Footer from './components/Footer'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import Shop from './components/Pages/Shop'
+import New from './components/Pages/New'
+import Pre from './components/Pages/Pre'
+import Service from './components/Pages/Service'
+import Special from './components/Pages/Special'
+import Finance from './components/Pages/Finance'
+import About from './components/Pages/About'
+
 
 
 const App = () => {
   return (
     <div>
+      <BrowserRouter>
       <Navbar/>
-      <Home/>
-      <Feauture/>
-      <Explore/>
-      <Icon/>
-      <Safety/>
+      <Routes>
+        <Route path='/' element={<Shop/>}/>
+        <Route path='/New' element={<New/>}/>
+        <Route path='/Pre' element={<Pre/>}/>
+        <Route path='/Service' element={<Service/>} />
+        <Route path='/Special' element={<Special/>}/>
+        <Route path='/Finance' element={<Finance/>} />
+        <Route path='/About' element={<About/>}/>
+      </Routes>
+   
       <Footer/>
+      </BrowserRouter>
     </div>
   )
 }
