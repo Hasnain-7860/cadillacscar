@@ -28,6 +28,7 @@ const Navbar = () => {
               </ul>
             </div>
             </div>
+            <h1 className='text-[40px]'><RxHamburgerMenu /> </h1>
             </div>
     </div>
   )
