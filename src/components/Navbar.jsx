@@ -41,7 +41,7 @@ const Navbar = () => {
       
       isOpen && ( 
         
-    <div className='bg-white  h-[100vh] '>
+    <div onClick={isOpen} className='bg-white  h-[100vh] '>
      <motion.div
       initial={{opacity:0 , y:-100}} animate={{opacity:1, y:0}}
       transition={{
@@ -52,7 +52,7 @@ const Navbar = () => {
       }}
      className='flex justify-between container'>
         <div  className=' flex'>
-              <ul onClick={isOpen}  className='   flex-col text-[30px] items-center ml-20 lg:hidden   '>
+              <ul   className='   flex-col text-[30px] items-center ml-20 lg:hidden   '>
                 <li><a href="" >  <Link to='/'  >Home</Link>  </a></li>
                 <li><a href=""><Link to='/New'>New</Link> </a></li>
                 <li><a href=""> <Link to='/Pre'>Our Values</Link> </a></li>
