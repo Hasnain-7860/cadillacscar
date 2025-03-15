@@ -52,7 +52,7 @@ const Navbar = () => {
       }}
      className='flex justify-between container'>
         <div  className=' flex'>
-              <ul  className='   flex-col text-[30px] items-center ml-20 lg:hidden   '>
+              <ul onClick={isOpen}  className='   flex-col text-[30px] items-center ml-20 lg:hidden   '>
                 <li><a href="" >  <Link to='/'  >Home</Link>  </a></li>
                 <li><a href=""><Link to='/New'>New</Link> </a></li>
                 <li><a href=""> <Link to='/Pre'>Our Values</Link> </a></li>
