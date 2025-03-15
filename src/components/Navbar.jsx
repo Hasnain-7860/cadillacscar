@@ -41,7 +41,7 @@ const Navbar = () => {
       
       isOpen && ( 
         
-    <div onClick={isOpen} className='bg-white  h-[100vh] '>
+    <div  className='bg-white  h-[100vh] '>
      <motion.div
       initial={{opacity:0 , y:-100}} animate={{opacity:1, y:0}}
       transition={{
