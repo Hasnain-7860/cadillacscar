@@ -4,6 +4,8 @@ import evimgr from '/src/assets/evimgr1.avif'
 import { IoIosArrowDown } from "react-icons/io";
 import {FinanceData} from "/src/components/MockData/data"
 import { div } from 'framer-motion/client';
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 
 const Finance = () => {
@@ -71,20 +73,24 @@ const Finance = () => {
           </div>
         </div>
         <div className='flex flex-col  text-center '>
-          <div className='bg-[url("https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/ev-life/new/24-cad-ev-life-public-charging-masthead-optiq-l.jpg?imwidth=3000")]'>
+          <div className='bg-[url("https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/ev-life/new/24-cad-ev-life-public-charging-masthead-optiq-l.jpg?imwidth=3000")] '>
           <h1 className='pt-[70vh] text-[50px]  tracking-[15px]'>PUBLIC CHARGING DEFINED</h1>
           </div>
         </div>
-        <div className='bg-black'>
-          <div>
+        <div className='bg-black grid grid-cols-1   '>
+          <div className='container text-[22px] py-7'>
             <p>Level 2 and DC Fast Chargers make for convenient charging options. With access to more than 250,000 public chargers in the U.S. and Canada, it’s easy to charge while you’re on the go. Enjoy extended public charging network access at more than 20,000 publicly accessible Tesla Superchargers.*</p>
           </div>
-          <div className='grid grid-col-span-1 lg:grid-cols-2'>
-            <div>
-              <p>ACCESS TESLA® SUPERCHARGER STATIONS WITH AN AVAILABLE NACS DC ADAPTER</p>
+          <div className='grid grid-col-span-1 lg:grid-cols-2 '>
+            <div className=' text-center py-20 w-[60%] flex flex-col gap-3 ml-[100px]  ' >
+              <p className='text-[25px] tracking-[5px]'>ACCESS TESLA® SUPERCHARGER STATIONS WITH AN AVAILABLE NACS DC ADAPTER</p>
+              <p>Expand your charging options by purchasing a GM-approved North American Charging Standard (NACS) DC adapter from Cadillac Accessories, from your preferred Cadillac dealer or through your myCadillac mobile app.*</p>
+              <p>Using the myCadillac mobile app,* you can easily find, charge and pay at select Tesla® Superchargers across the U.S. and Canada.</p>
+              <button className='text-lg flex container items-center gap-5 text-white ml-20 hover:text-gray-300  '>PURCHASE YOUR NACS DC ADAPTER <FaArrowRightLong className='text-[22px]' />
+              </button>
             </div>
-            <div>
-              <img src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/electric/ev-family/01-images/25-cad-ev-life-charging-tesla-public-charging-v2.jpg?imwidth=1200" alt="" />
+            <div className='h-[100%]'>
+              <img  src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/electric/ev-family/01-images/25-cad-ev-life-charging-tesla-public-charging-v2.jpg?imwidth=1200  "  alt="" />
             </div>
           </div>
         </div>
