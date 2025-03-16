@@ -46,7 +46,7 @@ const Explore = () => {
              <ul id='car' ref={slider} className='flex w-[600%] overflow-x-hidden lg:w-[240%] '>
                    {ExploreData.map((data)=>(
                     
-                     <div key={data.id} >
+                     <div onClick={slideForward} key={data.id} >
                       
                       
                       <img src={data.img} alt="" />
@@ -59,6 +59,10 @@ const Explore = () => {
                      ))}
                      </ul>
                      </div>
+                     <div className='flex gap-5'><a onClick={slideBackward} ><IoIosArrowBack  className='text-[40px] border-solid border-2 border-black ' /></a>
+                <a onClick={slideForward} ><IoIosArrowForward className='text-[40px] border-solid border-2 border-black' /></a>
+               
+                </div>
                
           
        
@@ -133,10 +137,7 @@ const Explore = () => {
               </div> */}
 
            
-                <div className='flex gap-5'><a onClick={slideBackward} ><IoIosArrowBack  className='text-[40px] border-solid border-2 border-black ' /></a>
-                <a onClick={slideForward} ><IoIosArrowForward className='text-[40px] border-solid border-2 border-black' /></a>
-               
-                </div>
+                
 
                
                 
