@@ -29,7 +29,7 @@ const Navbar = () => {
                 <li><a href=""> <Link to='/Pre'>Our Values</Link> </a></li>
                 <li><a href=""> <Link to='/Service'>Service & Parts</Link></a></li>
                 <li><a href=""> <Link to='/Special'>Specials</Link></a></li>
-                <li><a href=""> <Link to='/Finance'>Finance</Link></a></li>
+                <li><a href=""> <Link to='/Finance'>EV Life</Link></a></li>
                 <li><a href=""> <Link to='/About'>About Us</Link></a></li>
               </ul>
             </div>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 <li><a href=""> <Link to='/Pre'>Our Values</Link> </a></li>
                 <li><a href=""> <Link to='/Service'>Service & Parts</Link></a></li>
                 <li><a href=""> <Link to='/Special'>Specials</Link></a></li>
-                <li><a href=""> <Link to='/Finance'>Finance</Link></a></li>
+                <li><a href=""> <Link to='/Finance'>EV Life</Link></a></li>
                 <li><a href=""> <Link to='/About'>About Us</Link></a></li>
               </ul>
             </div>
