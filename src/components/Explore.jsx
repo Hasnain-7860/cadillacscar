@@ -43,7 +43,7 @@ const Explore = () => {
         </div>
 
             <div className='overflow-hidden'>
-             <ul id='car' ref={slider} className='flex w-[240%] overflow-x-hidden '>
+             <ul id='car' ref={slider} className='flex w-[600%] overflow-x-hidden lg:w-[240%] '>
                    {ExploreData.map((data)=>(
                     
                      <div key={data.id} >
