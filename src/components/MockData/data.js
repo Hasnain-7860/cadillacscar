@@ -122,3 +122,43 @@ export const FooterData =[
     // },
 
 ]
+
+export const FinanceData = [
+    {
+    id:1,
+    text:"UP TO",
+    miles:"51 MILES",
+    of:"OF RANGE* PER HOUR OF CHARGE",
+    up:"Up to 19.2 kW/80 amps output Charge rate based on ",
+    year:"2024 LYRIQ  with optional vehicle onboard  19.2 kW AC charging module",
+    gm:"GM ENERGY POWERSHIFT CHARGER",
+    upto:"Up to 67% more power than the GM PowerUp 11.5 kW Charger*",
+    button:"BUY NOW",
+    img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/ev-life/images-02/24-cad-ev-life-feature-power-up-plus-charger-v2.jpg?imwidth=1920"
+},
+{
+    id:2,
+    text:"UP TO",
+    miles:"51 MILES",
+    of:"OF RANGE* PER HOUR OF CHARGE",
+    up:"Up to 19.2 kW/80 amps output Charge rate based on ",
+    year:"2024 LYRIQ  with optional vehicle onboard  19.2 kW AC charging module",
+    gm:"GM ENERGY POWERSHIFT CHARGER",
+    upto:"Up to 67% more power than the GM PowerUp 11.5 kW Charger*",
+    button:"BUY NOW",
+    img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/ev-life/03-images/24-cad-ev-life-feature-power-up-charger-black.jpg?imwidth=3000"
+},
+{
+    id:2,
+    text:"UP TO",
+    miles:"51 MILES",
+    of:"OF RANGE* PER HOUR OF CHARGE",
+    up:"Up to 19.2 kW/80 amps output Charge rate based on ",
+    year:"2024 LYRIQ  with optional vehicle onboard  19.2 kW AC charging module",
+    gm:"GM ENERGY POWERSHIFT CHARGER",
+    upto:"Up to 67% more power than the GM PowerUp 11.5 kW Charger*",
+    button:"BUY NOW",
+    img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/ev-life/images-03/24-cad-ev-life-retail-offer-portable-charging-v3.jpg?imwidth=3000"
+}
+
+]

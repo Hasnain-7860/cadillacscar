@@ -2,6 +2,8 @@ import React from 'react'
 import evimg from '/src/assets/evimg1.avif'
 import evimgr from '/src/assets/evimgr1.avif'
 import { IoIosArrowDown } from "react-icons/io";
+import {FinanceData} from "/src/components/MockData/data"
+import { div } from 'framer-motion/client';
 
 
 const Finance = () => {
@@ -32,6 +34,25 @@ const Finance = () => {
         
         <div className='flex flex-col  pt-[79vh] text-center tracking-[15px]'><h1 className='text-[50px]'>EV LIFE AT HOME</h1>
         </div>
+        </div>
+        <div className='bg-black '>
+          <div className= ' px-20 grid grid-cols-3 gap-[60px] py-10'>
+            {FinanceData.map((data)=>(
+              <div className='text-center' key={data.id}>
+                <img src={data.img} alt="" />
+                <p>{data.text}</p>
+                <h1>{data.miles}</h1>
+                <h2>{data.of}</h2>
+                <p>{data.up}</p>
+                <p>{data.year}</p>
+                <h1> {data.gm}</h1>
+                <p>{data.upto}</p>
+                <button>{data.button}</button>
+
+              </div>
+            ))}
+            
+          </div>
         </div>
 
       
