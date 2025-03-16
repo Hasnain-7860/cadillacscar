@@ -12,16 +12,15 @@ const Special = () => {
       <div>
         <div className='bg-[url("https://www.cadillac.com/content/dam/cadillac/na/us/english/index/vehicle-groups/special-editions/special-editions/01-images/24-cadillac-special-editions-v-series-blackwing-collector-series-masthead-l.jpg?imwidth=1920")]'>
         <div className='flex flex-col gap-[60vh] pt-2 '>
-        <h1 className=' text-[20px] text-center  lg:text-center lg:text-[45px] container  font-bold'>V-SERIES BLACKWING
-        COLLECTOR SERIES</h1>
-        <div><h1 className=' text-[20px] text-center lg:text-center lg:text-[45px] container font-bold'>LE MONSTRE EDITION</h1>
+        <h1 className=' text-[20px] text-center  lg:text-center lg:text-[45px] container  font-bold'>V-SERIES BLACKWING COLLECTOR SERIES</h1>
+        <div><h1 className='text-[20px] text-center lg:text-center lg:text-[45px] container font-bold'>LE MONSTRE EDITION</h1>
         <p className='text-center text-[23px] font-semibold text-gray-500'>2025 CT5-V BLACKWING</p>
         </div>
         </div>
         </div>
       </div>
       <div className='bg-black'>
-      <div className='flex flex-col '> <img className='h-[90vh]' src={imgsp1} alt="" /><h1 className=''>Preproduction model shown throughout. Actual production model will vary. Available early 2025.</h1>
+      <div className='flex flex-col '> <img className='h-[90vh]' src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/vehicle-groups/special-editions/special-editions/01-images/24-cadillac-special-editions-le-monstre-masthead-l-v2.jpg?imwidth=3000"alt="" /><h1 className=''>Preproduction model shown throughout. Actual production model will vary. Available early 2025.</h1>
       
       </div>
       </div>
@@ -36,7 +35,7 @@ const Special = () => {
         <p className='text-[20px] text-gray-400'>2025 CT4-V BLACKWING</p>
       </div>
       <div>
-       <div> <img className='w-[100vw] h-[90vh]' src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/vehicle-groups/special-editions/special-editions/01-images/24-cadillac-special-editions-petit-pataud-masthead-s-v4.jpg?imwidth=800" alt="" />
+       <div> <img className='w-[100vw] h-[90vh]' src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/vehicle-groups/special-editions/special-editions/01-images/24-cadillac-special-editions-petit-pataud-masthead-l-v2.jpg?imwidth=3000" alt="" />
        <p className='bg-black pl-14'>Preproduction model shown throughout. Actual production model will vary. Available early 2025.</p>
        </div>
        <div className='bg-black grid grid-cols-1 lg:grid-cols-2 '>
