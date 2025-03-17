@@ -6,6 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import './Explore.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -46,10 +47,13 @@ const Explore = () => {
              <ul id='car' ref={slider} className='flex w-[600%] overflow-x-hidden lg:w-[240%] '>
                    {ExploreData.map((data)=>(
                     
-                     <div onClick={slideForward} key={data.id} >
+                     <div key={data.id} >
                       
-                      
+                      <Link to={data.link} target='_blank'>
                       <img src={data.img} alt="" />
+                      
+                      </Link>
+                   
                       {data.name}
                      <h1> {data.text}</h1>
                       </div>
@@ -59,7 +63,7 @@ const Explore = () => {
                      ))}
                      </ul>
                      </div>
-                     <div className='flex gap-5'><a onClick={slideBackward} ><IoIosArrowBack  className='text-[40px] border-solid border-2 border-black ' /></a>
+                     <div className='flex gap-5'><a onClick={slideBackward} className='mb-4' ><IoIosArrowBack  className='text-[40px] border-solid border-2 border-black  ' /></a>
                 <a onClick={slideForward} ><IoIosArrowForward className='text-[40px] border-solid border-2 border-black' /></a>
                
                 </div>

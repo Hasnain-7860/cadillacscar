@@ -80,7 +80,7 @@ const Finance = () => {
             ))}
             
           </div>
-           <div className='flex gap-5'><a onClick={slideBackward} ><IoIosArrowBack  className='text-[40px] border-solid border-2 border-black ' /></a>
+           <div  className='flex gap-5 lg:hidden'><a onClick={slideBackward} ><IoIosArrowBack  className='text-[40px] border-solid border-2 border-black ' /></a>
                           <a onClick={slideForward} ><IoIosArrowForward className='text-[40px] border-solid border-2 border-black' /></a>
                          
                           </div>

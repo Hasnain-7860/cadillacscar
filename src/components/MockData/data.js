@@ -13,49 +13,49 @@ export const ExploreData =[
         name:"CELESTIQ",
         text:"By inquiry only",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/07-images/lineup-suvs-26-escalade-iql-l.png?imwidth=3000",
-       
+       link:"https://web3forms.com/#start"
     },
     {
         id:2,
         name:"CELESTIQ",
         text:"By inquiry only",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-escalade-iq-l-v6.png?imwidth=3000",
-    
+     link:"https://web3forms.com/#start"
     },
     {
         id:3,
         name:"CELESTIQ",
         text:"By inquiry only",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-sedans-celestiq-l-v4.png?imwidth=3000",
-        
+         link:"https://web3forms.com/#start"
     },
     {
         id:4,
         name:"CELESTIQ",
         text:"By inquiry only",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-26-vistiq-l-v2.png?imwidth=3000",
-        
+         link:"https://web3forms.com/#start"
     },
     {
         id:5,
         name:"CELESTIQ",
         text:"By inquiry only",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-26-lyriq-v-l.png?imwidth=3000",
-        
+         link:"https://web3forms.com/#start"
     },
     {
         id:6,
         name:"CELESTIQ",
         text:"By inquiry only",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-lyriq-l-v3.png?imwidth=3000",
-        
+         link:"https://web3forms.com/#start"
     },
     {
         id:7,
         name:"CELESTIQ",
         text:"By inquiry only",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-optiq-l-v3.png?imwidth=3000",
-        
+         link:"https://web3forms.com/#start"
     },
     
 ]
@@ -134,6 +134,7 @@ export const FinanceData = [
     gm:"GM ENERGY POWERSHIFT CHARGER",
     upto:"Up to 67% more power than the GM PowerUp 11.5 kW Charger*",
     button:"BUY NOW",
+    
     img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/ev-life/images-02/24-cad-ev-life-feature-power-up-plus-charger-v2.jpg?imwidth=1920"
 },
 {
