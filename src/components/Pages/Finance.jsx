@@ -61,7 +61,7 @@ const Finance = () => {
             {FinanceData.map((data)=>(
               <div className='text-center flex flex-col gap-3 '  key={data.id}>
                 <div className='flex flex-col  '>
-                 <img className='' src={data.img} alt="" />
+                 <img className='flex flex-col text-center items-center' src={data.img} alt="" />
                 <p className='text-[22px] py-3'>{data.text}</p>
                 <h1 className='text-[28px] py-2'>{data.miles}</h1>
                 <h2 className='text-[22px]'>{data.of}</h2>
