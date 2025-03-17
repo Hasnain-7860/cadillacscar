@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import evimg from '/src/assets/evimg1.avif'
 import evimgr from '/src/assets/evimgr1.avif'
 import { IoIosArrowDown } from "react-icons/io";
 import {FinanceData} from "/src/components/MockData/data"
 import { div } from 'framer-motion/client';
 import { FaArrowRightLong } from "react-icons/fa6";
+import  '../Finance.css'
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 
 
 const Finance = () => {
+    const slider =useRef ();
+    let tx=0;
+  
+    const slideBackward =()=>{
+      if(tx < 0){
+        tx +=35
+      }
+      slider.current.style.transform =`translateX(${tx}%)`;
+  
+    };
+    const slideForward =()=>{
+      if(tx > -40){
+        tx -=34
+      }
+      slider.current.style.transform =`translateX(${tx}%)`;
+    }
   return (
     <div className='text-white'> 
       <div className='bg-[url("https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/ev-life/images-03/24-cad-ev-life-masthead-lyriq-l-v9.jpg?imwidth=3000")] '>
@@ -37,12 +56,12 @@ const Finance = () => {
         <div className='flex flex-col  pt-[79vh] text-center tracking-[15px]'><h1 className='text-[50px]'>EV LIFE AT HOME</h1>
         </div>
         </div>
-        <div className='bg-black py-[100px] '>
-          <div className= ' px-20 grid grid-cols-3 gap-[90px] py-10'>
+        <div className='bg-black py-[100px] overflow-hidden '>
+          <div id='ca' ref={slider} className= ' w-[300vw] overflow-x-hidden px-2 grid grid-cols-3 gap-[30px] py-10  lg:px-20 lg:grid lg:grid-cols-3 lg:gap-[90px] lg:py-10 lg:w-[100vw]'>
             {FinanceData.map((data)=>(
               <div className='text-center flex flex-col gap-3 '  key={data.id}>
                 <div className='flex flex-col  '>
-                 <img src={data.img} alt="" />
+                 <img className='' src={data.img} alt="" />
                 <p className='text-[22px] py-3'>{data.text}</p>
                 <h1 className='text-[28px] py-2'>{data.miles}</h1>
                 <h2 className='text-[22px]'>{data.of}</h2>
@@ -55,11 +74,16 @@ const Finance = () => {
                 <button className='bg-white text-black p-3 mt-3'>{data.button}</button>
                 </div>
               </div>
+              
 
               
             ))}
             
           </div>
+           <div className='flex gap-5'><a onClick={slideBackward} ><IoIosArrowBack  className='text-[40px] border-solid border-2 border-black ' /></a>
+                          <a onClick={slideForward} ><IoIosArrowForward className='text-[40px] border-solid border-2 border-black' /></a>
+                         
+                          </div>
         </div>
         <div>
           <div className='grid grid-cols-1 lg:grid-cols-2 bg-black '>
