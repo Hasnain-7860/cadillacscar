@@ -8,24 +8,26 @@ const About = () => {
         <p className='text-[20px]'>Fill out the form below and we'll contact you shortly.</p>
       </div>
       <div className='grid grid-cols-1 lg:grid-cols-2  '>
-        <form className='grid grid-cols-1 lg:grid-cols-2 w-[50vw] container' >
-          <div className='flex flex-col '><label>
+        <form className='grid grid-cols-1 lg:grid-cols-2 w-[50vw] container py-20' >
+          <div className='flex flex-col '><label className='text-[20px]'>
           *First Name
-          </label >
-          <input  className='rounded-md shadow-lg border-solid border-2 border-black w-[250px]' type="text" name='name' placeholder='First Name' />
+          </label  >
+          <div className='w-[300px] h-[35px] bg-black '>
+          <input  className='outline-none' type="text" name='name' placeholder='First Name' />
+          </div> 
           </div>
           <div className='flex flex-col '>
-          <label>
+          <label className='text-[20px]'>
           *Last Name
           </label>
           <input className='rounded-md shadow-lg border-solid border-2 border-black w-[250px]' type="text" name='last name' placeholder='Last Name' />
           </div>
           <div className='flex flex-col'>
-          <lable>*E-Mail Address</lable>
+          <lable className="text-[20px]">*E-Mail Address</lable>
           <input className='rounded-md shadow-lg border-solid border-2 border-black w-[250px]' type="text" name='email' placeholder='Email Address' />
           </div>
           <div className='flex flex-col'>
-          <label>*Phone</label>
+          <label className='text-[20px]'>*Phone</label>
           <input className='rounded-md shadow-lg border-solid border-2 border-black w-[250px]' type="text" name='phone' placeholder='Phone Number' />
           
           
