@@ -12,9 +12,9 @@ const Finance = () => {
   return (
     <div className='text-white'> 
       <div className='bg-[url("https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/ev-life/images-03/24-cad-ev-life-masthead-lyriq-l-v9.jpg?imwidth=3000")] '>
-    <div className='flex flex-col gap-[80vh] py-8'>
+    <div className='flex flex-col  py-10'>
       <h1 className='text-center text-[60px]  tracking-[23px]'>YOUR EV LIFE</h1>
-      <p>Simulated charging shown.</p>
+      <p className='pt-[80vh]'>Simulated charging shown.</p>
       </div>
       </div>
 
