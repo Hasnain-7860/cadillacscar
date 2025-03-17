@@ -3,34 +3,35 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-      <div>
-        <h1>Contact Us</h1>
-        <p>Fill out the form below and we'll contact you shortly.</p>
+      <div className='bg-black text-white flex flex-col text-center py-7'>
+        <h1 className='text-[40px]'>Contact Us</h1>
+        <p className='text-[20px]'>Fill out the form below and we'll contact you shortly.</p>
       </div>
       <div className='grid grid-cols-1 lg:grid-cols-2  '>
-        <form className='grid grid-cols-1 lg:grid-cols-2 w-[70vw] container' >
-          <div><label>
+        <form className='grid grid-cols-1 lg:grid-cols-2 w-[50vw] container' >
+          <div className='flex flex-col '><label>
           *First Name
-          </label>
-          <input type="text" name='name' placeholder='First Name' />
+          </label >
+          <input  className='rounded-md shadow-lg border-solid border-2 border-black w-[250px]' type="text" name='name' placeholder='First Name' />
           </div>
-          <div>
+          <div className='flex flex-col '>
           <label>
           *Last Name
           </label>
-          <input type="text" name='last name' placeholder='Last Name' />
+          <input className='rounded-md shadow-lg border-solid border-2 border-black w-[250px]' type="text" name='last name' placeholder='Last Name' />
           </div>
-          <div>
+          <div className='flex flex-col'>
           <lable>*E-Mail Address</lable>
-          <input type="text" name='email' placeholder='Email Address' />
+          <input className='rounded-md shadow-lg border-solid border-2 border-black w-[250px]' type="text" name='email' placeholder='Email Address' />
           </div>
-          <div>
+          <div className='flex flex-col'>
           <label>*Phone</label>
-          <input type="text" name='phone' placeholder='Phone Number' />
+          <input className='rounded-md shadow-lg border-solid border-2 border-black w-[250px]' type="text" name='phone' placeholder='Phone Number' />
           
-          {/* <label>Comments:</label>
-          <textarea name='Comment' rows="6"></textarea> */}
+          
           </div>
+          <label>Comments:</label>
+          <textarea  name='Comment' rows="6"></textarea>
         </form>
         <div>
           <div>
