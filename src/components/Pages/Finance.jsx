@@ -52,9 +52,10 @@ const Finance = () => {
           <p className='text-[20px]'>Discover how OPTIQ, LYRIQ, ESCALADE IQ, CELESTIQ and the upcoming VISTIQ can fit seamlessly into your iconic lifestyle.</p>
         </div>
         <div className='bg-[url("https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/ev-life/images-02/25-cadillac-ev-life-at-home-l.jpg?imwidth=3000")]'>
-        
+        {/* <div className='bg-[url("https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/ev-life/images-02/25-cadillac-ev-life-at-home-s.jpg?imwidth=1600")] h-[50%] '> */}
         <div className='flex flex-col  pt-[79vh] text-center tracking-[15px]'><h1 className='text-[50px]'>EV LIFE AT HOME</h1>
         </div>
+        {/* </div> */}
         </div>
         <div className='bg-black py-[100px] overflow-hidden '>
           <div id='ca' ref={slider} className= ' w-[300vw] overflow-x-hidden px-2 grid grid-cols-3 gap-[30px] py-10  lg:px-20 lg:grid lg:grid-cols-3 lg:gap-[90px] lg:py-10 lg:w-[100vw]'>

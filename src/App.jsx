@@ -14,6 +14,9 @@ import Service from './components/Pages/Service'
 import Special from './components/Pages/Special'
 import Finance from './components/Pages/Finance'
 import About from './components/Pages/About'
+import Gadi from './components/Gadi'
+import Find from './components/Find'
+import Build from './components/Build'
 
 
 
@@ -30,6 +33,10 @@ const App = () => {
         <Route path='/Special' element={<Special/>}/>
         <Route path='/Finance' element={<Finance/>} />
         <Route path='/About' element={<About/>}/>
+        <Route path='/Gadi' element={<Gadi/>}/>
+        <Route path='/Find' element={<Find/>}/>
+        <Route path='/Build' element={<Build/>}/>
+
       </Routes>
    
       <Footer/>
