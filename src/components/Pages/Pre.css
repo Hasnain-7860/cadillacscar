@@ -1,0 +1,8 @@
+.working{
+    width: 100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1) 80%, rgba(0,0,0,1)),  url(https://www.cadillac.com/content/dam/cadillac/na/us/english/index/drp/technology/large/23-cad-category-landing-page-values-innovation-l.jpg?imwidth=3000);
+    background-size: 100vw 100%;
+    box-shadow: 0 10px 20px -6px;
+    
+}

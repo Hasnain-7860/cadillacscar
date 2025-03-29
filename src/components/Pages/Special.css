@@ -1,0 +1,8 @@
+.work{
+    width: 100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1) 80%, rgba(0,0,0,1)),  url(https://www.cadillac.com/content/dam/cadillac/na/us/english/index/vehicle-groups/special-editions/special-editions/01-images/24-cadillac-special-editions-le-monstre-masthead-l-v2.jpg?imwidth=3000);
+    background-size: 100vw 100%;
+    box-shadow: 0 10px 20px -6px;
+    
+}

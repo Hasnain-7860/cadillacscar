@@ -371,4 +371,23 @@ export const FinanceData = [
         text:"From.$129.990 *"
     },
  ]
-
+ export const LineupData=
+ [
+    {
+        id:1,
+        name:"ELECTRIC",
+    },
+    {
+        id:2,
+        name:"SUCS",
+    },
+    {
+        id:3,
+        name:"SEDANS",
+    },
+    {
+        id:4,
+        name:"V-SERIES",
+    }
+ ]
+// ["ELECTRIC","SUCS","SEDANS","V-SERIES"]

@@ -1,16 +1,21 @@
-import React, { useRef } from "react";
-import { ExploreData } from "../components/MockData/data";
+import React, { useRef, useState } from "react";
+import { ExploreData, LineupData } from "../components/MockData/data";
 import { div } from "motion/react-client";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import "./Explore.css";
-import { Link } from "react-router-dom";
+import { data, Link } from "react-router-dom";
 
 const Explore = () => {
+  
   const slider = useRef();
   let tx = 10;
+  const [active, setActive] = useState("0");
+  // const menu =() =>{
+  //   setActive(!active)
+  // }
 
   const slideBackward = () => {
     if (tx < 0) {
@@ -31,42 +36,67 @@ const Explore = () => {
           EXPLORE THE CADILLAC LINEUP
         </h1>
       </div>
-      <div>
-        <ul className="  gap-20 lg:flex lg:flex-center items-center gap-20 container   ">
-          <li className=" p-4 px-[100px] border-solid border-2 border-black text-black hover:bg-black  hover:text-white ">
-            <Link to="/"><button>
+      <div >
+        <ul className="  gap-20 lg:flex lg:flex-center items-center  container   ">
+       
+          <li onClick={()=>{setActive("0")}} className={` p-4 px-[100px] border-solid border-2 border-black cursor-pointer ${active =="0" ? "bg-black text-white": "bg-white text-black"}`}>
+            <Link to="/">
+            <button>
               <a >ELECTRIC</a>
             </button>
             </Link>
           </li>
-          <li className=" p-4 px-[100px] border-solid border-2 border-black text-black  hover:bg-black hover:text-white ">
+
+          <li onClick={()=>{setActive("1")}} className={` p-4 px-[100px] border-solid border-2 border-black cursor-pointer  ${active =="1" ? "bg-black text-white": "bg-white text-black"}  `}>
+            <Link to="/">
             <button>
-              <a href="">SUVS</a>
+              <a >SUCS</a>
             </button>
+            </Link>
           </li>
-          <li className="p-4 px-[100px] border-solid border-2 text-black border-black  hover:bg-black  hover:text-white ">
-            
+          <li onClick={()=>{setActive("2")}} className={` p-4 px-[100px] border-solid border-2 border-black cursor-pointer  ${active =="2" ? "bg-black text-white": "bg-white text-black"}`}>
+            <Link to="/">
             <button>
-              <a href="">SEDANS</a>
+              <a >SEDANS</a>
             </button>
+            </Link>
           </li>
-          <li className=" p-4 px-[100px] border-solid border-2 text-black border-black hover:bg-black  hover:text-white">
+
+          <li onClick={()=>{setActive("3")}} className={` p-4 px-[100px] border-solid border-2 border-black  cursor-pointer ${active =="3" ? "bg-black text-white " : "bg-white text-black " }  `}>
+            <Link to="/">
             <button>
-              <a href="">V-SERIES</a>
+              <a >SEDANS</a>
             </button>
+            </Link>
           </li>
+         
+
+         
+         
+          
         </ul>
       </div>
 
-      <div className="overflow-hidden w-[40vh] md:w-[80%] lg:w-[100%]">
+      {/* <div>
+        <ul className="flex gap-20 ">
+          {LineupData.map((data)=>(
+            <div key={data.id}>
+             <Link id="/"> <li className={`p-4 px-[100px] border-solid border-2  border-black text-white ${active==0 ? "bg-black  ":"bg-white "} text-balck  `}>
+               <button onClick={menu}>{active?active:setActive} {data.name}</button></li></Link>
+            </div>
+          ))}
+          
+        </ul>
+      </div> */}
+
+      <div className="overflow-hidden w-[40vh] md:w-[80%] lg:w-[100%] ">
         <ul
           id="car"
           ref={slider}
-          className="flex w-[600%] overflow-x-hidden  lg:w-[240%]  "
+          className="flex w-[600%] overflow-x-hidden  lg:w-[240%]"
         >
           {ExploreData.map((data) => (
             <div key={data.id}>
-              {/* <Link to={data.link} target='_blank'> */}
               <Link to="/Gadi" target='_blank'>
               <div className=" flex flex-col test-center justify-center items-center ">
                 <img src={data.img} alt="" />
@@ -79,10 +109,6 @@ const Explore = () => {
                 </div>
               </div>
               </Link>
-
-              {/* </Link> */}
-
-             
             </div>
           ))}
         </ul>

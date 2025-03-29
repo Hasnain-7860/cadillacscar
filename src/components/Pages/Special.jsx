@@ -1,5 +1,6 @@
 import React from 'react'
 import imgsp1 from '/src/assets/imgsp1.avif'
+import './Special.css'
 
 
 const Special = () => {
@@ -19,11 +20,18 @@ const Special = () => {
         </div>
         </div>
       </div>
+
       <div className='bg-black'>
-      <div className='flex flex-col '> <img className='h-[90vh]' src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/vehicle-groups/special-editions/special-editions/01-images/24-cadillac-special-editions-le-monstre-masthead-l-v2.jpg?imwidth=3000"alt="" /><h1 className=''>Preproduction model shown throughout. Actual production model will vary. Available early 2025.</h1>
-      
+      <div className='flex flex-col '> <img className='h-[90vh]' src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/vehicle-groups/special-editions/special-editions/01-images/24-cadillac-special-editions-le-monstre-masthead-l-v2.jpg?imwidth=3000"alt="" />
+      <h1 className=''>Preproduction model shown throughout. Actual production model will vary. Available early 2025.</h1>
       </div>
       </div>
+
+      <div class="work">
+        <p>Preproduction model shown throughout. Actual production model will vary. Available early 2025.</p>
+
+      </div>
+
       <div className='bg-black grid grid-cols-1 lg:grid-cols-2 pt-4 '>
         <img src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/vehicle-groups/special-editions/special-editions/01-images/24-cadillac-special-editions-le-monstre-interior-s-v2.jpg?imwidth=800" alt="" />
       <div className='container'><h1 className='text-[25px] font-semibold'>Cadillac’s history grows ever more venerated as the Le Monstre edition takes center stage—honoring the 75th anniversary of the debut of its namesake inspiration—flaunting a Phantom Blue interior and Santorini accents in your choice of Sky Cool Gray or Jet Black with heritage number stitching. In homage to the 101st anniversary of the first 24 hours of the original Le Mans race, production of the Le Monstre edition is limited to 101 vehicles.</h1>
