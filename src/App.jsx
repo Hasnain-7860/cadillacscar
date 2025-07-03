@@ -17,6 +17,8 @@ import About from './components/Pages/About'
 import Gadi from './components/Gadi'
 import Find from './components/Find'
 import Build from './components/Build'
+  import { ToastContainer, toast } from 'react-toastify';
+
 
 
 
@@ -24,6 +26,7 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
+      <ToastContainer />
       <Navbar/>
       <Routes>
         <Route path='/' element={<Shop/>}/>
