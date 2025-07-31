@@ -4,7 +4,7 @@ import { IoCarSportOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import { FaFirstOrder } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Find from "../Find";
 
 
@@ -15,26 +15,23 @@ export const ExploreData =[
     {
         id:1,
         name:"CELESTIQ",
-        text:"By inquiry only",
         year:"2025",
         btn:"Explore",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/07-images/lineup-suvs-26-escalade-iql-l.png?imwidth=3000",
-       link:"https://web3forms.com/#start",
+       Link:"https://web3forms.com/#start",
        data:FaArrowRightLong 
     },
     {
         id:2,
         name:"CELESTIQ",
-        text:"By inquiry only",
         year:"2026",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-escalade-iq-l-v6.png?imwidth=3000",
-        link:"https://web3forms.com/#start",
+        Link:"/Gadi",
         btn:"Explore",
     },
     {
         id:3,
         name:"CELESTIQ",
-        text:"By inquiry only",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-sedans-celestiq-l-v4.png?imwidth=3000",
          link:"https://web3forms.com/#start",
          btn:"Explore",
@@ -44,7 +41,6 @@ export const ExploreData =[
         id:4,
         name:"CELESTIQ",
         year:"2025",
-        text:"By inquiry only",
         btn:"Explore",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-26-vistiq-l-v2.png?imwidth=3000",
          link:"https://web3forms.com/#start"
@@ -53,15 +49,13 @@ export const ExploreData =[
         id:5,
         name:"CELESTIQ",
         year:"2026",
-        btn:"Expolre",
-        text:"By inquiry only",
+        btn:"Explore",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-26-lyriq-v-l.png?imwidth=3000",
          link:"https://web3forms.com/#start"
     },
     {
         id:6,
         name:"CELESTIQ",
-        text:"By inquiry only",
         year:"2026",
         btn:"Explore",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-lyriq-l-v3.png?imwidth=3000",
@@ -70,8 +64,207 @@ export const ExploreData =[
     {
         id:7,
         name:"CELESTIQ",
-        text:"By inquiry only",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-optiq-l-v3.png?imwidth=3000",
+         link:"https://web3forms.com/#start",
+         year:"2025",
+         btn:"Explore"
+    },
+    
+]
+
+export const ExploreDataa =[
+    {
+        id:1,
+        name:"CELESTIQ",
+        year:"2025",
+        btn:"Explore",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-escalade-v-series-l-v2.png?imwidth=1200",
+       link:"https://web3forms.com/#start",
+       data:FaArrowRightLong 
+    },
+    {
+        id:2,
+        name:"CELESTIQ",
+        year:"2026",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/07-images/lineup-suvs-25-escalade-esv-l-v2.png?imwidth=1200",
+        link:"https://web3forms.com/#start",
+        btn:"Explore",
+    },
+    {
+        id:3,
+        name:"CELESTIQ",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-escalade-l-v3.png?imwidth=1200",
+         link:"https://web3forms.com/#start",
+         btn:"Explore",
+         year:"2025"
+    },
+    {
+        id:4,
+        name:"CELESTIQ",
+        year:"2025",
+        btn:"Explore",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-26-vistiq-l-v2.png?imwidth=1200",
+        link:"https://web3forms.com/#start"
+    },
+    {
+        id:5,
+        name:"CELESTIQ",
+        year:"2026",
+        btn:"Explore",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-26-lyriq-v-l.png?imwidth=1200",
+         link:"https://web3forms.com/#start"
+    },
+    {
+        id:6,
+        name:"CELESTIQ",
+        year:"2026",
+        btn:"Explore",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-lyriq-l-v3.png?imwidth=3000",
+         link:"https://web3forms.com/#start"
+    },
+    {
+        id:7,
+        name:"CELESTIQ",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-optiq-l-v3.png?imwidth=3000",
+         link:"https://web3forms.com/#start",
+         year:"2025",
+         btn:"Explore"
+    },
+     {
+        id:8,
+        name:"CELESTIQ",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/06-images/lineup-suvs-25-xt4-l-v2.png?imwidth=1200",
+         link:"https://web3forms.com/#start",
+         year:"2025",
+         btn:"Explore"
+    },
+    
+]
+
+export const ExploreDataaa =[
+    {
+        id:1,
+        name:"CELESTIQ",
+        year:"2025",
+        btn:"Explore",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-sedans-celestiq-l-v6.png?imwidth=1200",
+       link:"https://web3forms.com/#start",
+       data:FaArrowRightLong 
+    },
+    {
+        id:2,
+        name:"CELESTIQ",
+        year:"2026",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-sedans-25-ct5-v-blackwing-l-v2.png?imwidth=1200",
+        link:"https://web3forms.com/#start",
+        btn:"Explore",
+    },
+    {
+        id:3,
+        name:"CELESTIQ",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-sedans-25-ct5-l-v4.png?imwidth=1200",
+         link:"https://web3forms.com/#start",
+         btn:"Explore",
+         year:"2025"
+    },
+    {
+        id:4,
+        name:"CELESTIQ",
+        year:"2025",
+        btn:"Explore",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/07-images/lineup-sedans-25-ct4-l-v3.png?imwidth=1200",
+         link:"https://web3forms.com/#start"
+    },
+    {
+        id:5,
+        name:"CELESTIQ",
+        year:"2026",
+        btn:"Explore",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/06-images/lineup-sedans-25-ct4-l-v2.png?imwidth=1200",
+         link:"https://web3forms.com/#start"
+    },
+    {
+        id:6,
+        name:"CELESTIQ",
+        year:"2026",
+        btn:"Explore",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/07-images/optiq-v/lineup-suvs-26-optiq-v-l.png?imwidth=1200",
+         link:"https://web3forms.com/#start"
+    },
+    {
+        id:7,
+        name:"CELESTIQ",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-26-lyriq-v-l.png?imwidth=1200",
+         link:"https://web3forms.com/#start",
+         year:"2026",
+         btn:"Explore"
+    },
+
+
+
+]
+export const ExploreDataaaa =[
+    {
+        id:1,
+        name:"CELESTIQ",
+        year:"2025",
+        btn:"Explore",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/new/lineup-suvs-25-escalade-esv-v-l.png?imwidth=1200",
+       link:"https://web3forms.com/#start",
+       data:FaArrowRightLong 
+    },
+    {
+        id:2,
+        name:"CELESTIQ",
+        year:"2026",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-escalade-v-series-l-v2.png?imwidth=1200",
+        link:"https://web3forms.com/#start",
+        btn:"Explore",
+    },
+    {
+        id:3,
+        name:"CELESTIQ",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-26-lyriq-v-l.png?imwidth=1200",
+         link:"https://web3forms.com/#start",
+         btn:"Explore",
+         year:"2025"
+    },
+    {
+        id:4,
+        name:"CELESTIQ",
+        year:"2025",
+        btn:"Explore",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/07-images/optiq-v/lineup-suvs-26-optiq-v-l.png?imwidth=1200",
+        link:"https://web3forms.com/#start"
+    },
+    {
+        id:5,
+        name:"CELESTIQ",
+        year:"2026",
+        btn:"Explore",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-sedans-25-ct5-v-blackwing-l-v2.png?imwidth=1200",
+         link:"https://web3forms.com/#start"
+    },
+    {
+        id:6,
+        name:"CELESTIQ",
+        year:"2026",
+        btn:"Explore",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/07-images/lineup-sedans-25-ct4-l-v3.png?imwidth=1200",
+         link:"https://web3forms.com/#start"
+    },
+    {
+        id:7,
+        name:"CELESTIQ",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-optiq-l-v3.png?imwidth=3000",
+         link:"https://web3forms.com/#start",
+         year:"2025",
+         btn:"Explore"
+    },
+     {
+        id:8,
+        name:"CELESTIQ",
+        img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/06-images/lineup-suvs-25-xt4-l-v2.png?imwidth=1200",
          link:"https://web3forms.com/#start",
          year:"2025",
          btn:"Explore"

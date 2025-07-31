@@ -1,22 +1,20 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import { useRef, useState } from 'react';
+import { ExploreData } from './MockData/data';
+import "./Gadi.css";
+import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { data } from 'autoprefixer';
+import { div } from 'motion/react-client';
 
 const Gadi = () => {
   return (
-    <div className='bg-black'>
-        <div className=''>
-           
-        </div>
-        <div className='flex justify-center flex-col items-center font-Arial   lg:w-[40vw] lg:ml-[30%] text-white gap-2 py-[50px]  '>
-          <h1 className='text-[27px]  text-center lg:text-[33px]'>CUSTOM-COMMISSIONED. HAND-BUILT.
-          EXTRAORDINARILY RARE.</h1>
-          <p className='text-[22px] '>ULTRA-LUXURY SEDAN STARTING AT MID-$300K1</p>
-          <button className='bg-white text-black p-2 px-[18px] text-[22px] mt-8 border border-white hover:bg-black  hover:text-white lg:px-[180px] '>INQUIRE TO PURCHASE</button>
-        </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2'>
-          <img src="https://www.cadillac.com/content/dam/cadillac/na/us/english/index/vehicles/2025/celestiq/craftsmanship/24-cad-celestiq-craftmanship-speakers.jpg?imwidth=1920" alt="" />
-          <h1>BESPOKE CRAFTSMANSHIP</h1>
-          <h1>STANDARD OF THE WORLD          </h1>
-        </div>
+    <div  className='Pre'>
+      <div className=' flex justify-center items-center  bg-black bg-opacity-20 flex-col gap-5 '>
+        <img className='w-auto h-20' src="https://www.centralhoustoncadillac.com/static/v8/global/images/franchise-logos/auto/c/cadillac/white/117x80.png?r=1741194409000" alt="" />
+      <h1 className='text-white text-4xl'>Welcome to Gadi</h1>
+      </div>
     </div>
   )
 }

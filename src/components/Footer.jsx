@@ -9,6 +9,7 @@ import { FaFacebook } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import { FaInstagramSquare } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -25,8 +26,9 @@ const Footer = () => {
             <button className='flex items-center p-3  justify-center text-[20px] gap-5'><CiSearch /><h1>SEARCH</h1></button>
             <div className='flex flex-col gap-10  justify-center items-center ml-[60px]  lg:gap-10 text-[17px] mt-1 lg:items-start'>
           <p className='text-[10px] py-3 lg:text-[15px]'>Download the myCadillac App* for Apple or Android™</p>
-        <div className='flex w-[105px] justify-center items-center lg:ml-[40px] '><img src={footerimg} alt="" />
-        <img src={footerimg2} alt="" />
+        <div className='flex w-[105px] justify-center items-center lg:ml-[40px] '>
+          <img  src={footerimg} alt="" />
+          <img src={footerimg2} alt="" />
         </div>
         </div>
         </div>
@@ -43,13 +45,10 @@ const Footer = () => {
            <div className='flex flex-col  py-1 '>
           <h1>FOLLOW US</h1>
           <div className='flex gap-10 w-[150px] mt-[15px]'>
-            <FaFacebook />
-          <BsYoutube />
-          <GrInstagram />
+            <NavLink to="https://www.facebook.com/"><FaFacebook className='text-[20px] text-black hover:text-gray-500 cursor-pointer' /></NavLink>
+          <NavLink to="https://www.youtube.com/"><BsYoutube className='text-[20px] text-black hover:text-gray-500 cursor-pointer' /></NavLink>
+          <NavLink to="https://www.instagram.com/"><GrInstagram className='text-[20px] text-black hover:text-gray-500 cursor-pointer' /></NavLink>
           </div>
-
-
-
 
         </div>
         </div>

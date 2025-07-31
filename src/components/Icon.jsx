@@ -2,7 +2,7 @@ import React from 'react'
 import {IconData} from "../components/MockData/data"
 import { data } from 'autoprefixer'
 import { div } from 'motion/react-client'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Icon = () => {
   return (
@@ -13,12 +13,12 @@ const Icon = () => {
         <div>
             <div className='grid  grid-cols-1   lg:grid-cols-4 container py-10'>
                 {IconData.map((data)=>(
-                    <div key={data.id} >
-                        <Link to={data.link}><div className='flex flex-col p-[50px] bg-gray-200 justify-center items-center border-solid border-2 border-black text-[20px] font-semibold gap-8 mt-10 lg:mr-10 cursor-pointer '>
+                    <div key={data.id}>
+                        <NavLink onClick={() => {window.scrollTo(0, 0);}}  to={data.link} ><div className='flex flex-col p-[50px] bg-gray-200 justify-center items-center border-solid border-2 border-black text-[20px] font-semibold gap-8 mt-10 lg:mr-10 cursor-pointer '>
                        <h1 className='text-[40px]'> <data.data/></h1>
                         <h1 className='text-[20px] '>{data.name}</h1>
                         </div>
-                        </Link>
+                        </NavLink>
                     </div>
                 ))}
             </div>
@@ -28,3 +28,4 @@ const Icon = () => {
 }
 
 export default Icon
+

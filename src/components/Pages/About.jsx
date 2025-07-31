@@ -50,7 +50,7 @@ const About = ({ contactRef }) => {
                 Message
                 <textarea className='w-full border border-gray-300rounded py-3 px-4 mt-2 h-40 resize-none' text="Message" name='Message'placeholder='Message' required> </textarea>
             </div>
-            <button className='border bg-yellow-400 text-black px-12 py-2 rounded mb-10 '>{result ?  result:"Send Message" }</button>
+            <button className='border bg-black text-white px-12 py-2 rounded mb-10 '>{result ?  result:"Send Message" }</button>
         </form>
     </div>
   )
