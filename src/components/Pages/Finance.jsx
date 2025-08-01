@@ -30,7 +30,7 @@ const Finance = () => {
     }
   return (
     <div className='text-white'> 
-      <div className='bg-[url("https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/ev-life/images-03/24-cad-ev-life-masthead-lyriq-l-v9.jpg?imwidth=3000")] '>
+      <div className=' md:object-cover bg-[url("https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/ev-life/images-03/24-cad-ev-life-masthead-lyriq-l-v9.jpg?imwidth=3000")] '>
     <div className='flex flex-col  py-10'>
       <h1 className='text-center text-[60px]  tracking-[23px]'>YOUR EV LIFE</h1>
       <p className='pt-[80vh]'>Simulated charging shown.</p>
@@ -62,7 +62,7 @@ const Finance = () => {
             {FinanceData.map((data)=>(
               <div className='text-center flex flex-col gap-3 '  key={data.id}>
                 <div className='flex flex-col  '>
-                 <img className='flex flex-col text-center items-center' src={data.img} alt="" />
+                 <img className='flex flex-col text-center items-center ' src={data.img} alt="" />
                 <p className='text-[22px] py-3'>{data.text}</p>
                 <h1 className='text-[28px] py-2'>{data.miles}</h1>
                 <h2 className='text-[22px]'>{data.of}</h2>

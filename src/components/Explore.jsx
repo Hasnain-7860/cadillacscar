@@ -118,7 +118,7 @@ const Explore = () => {
         >
           {ExploreDataa.map((data) => (
             <div key={data.id}>
-              <Link to="/Gadi" target='_blank'>
+              <NavLink to={data.Link} target='_blank' onClick={() => {window.scrollTo(0, 0);}}>
               <div className=" flex flex-col test-center justify-center items-center ">
                 <img src={data.img} alt="" />
                 <div className="flex flex-col items-center">
@@ -129,7 +129,7 @@ const Explore = () => {
                   <button className="text-[30px]">{data.btn}</button>
                 </div>
               </div>
-              </Link>
+              </NavLink>
             </div>
           ))}
         </ul>

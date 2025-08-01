@@ -1,8 +1,8 @@
 .Pre{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.1) 80%, rgba(0,0,0,1)),  url('https://cf-images.us-east-1.prod.boltdns.net/v1/static/336226144/68735c23-fd5e-4d7c-a2fb-d08887286538/6b11025b-af9c-489f-8a23-4ebdf1d427c5/1280x720/match/image.jpg');
-    background-size: 100vw 100vh;
+    background-size: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0 10px 20px -6px;

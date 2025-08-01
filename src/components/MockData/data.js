@@ -79,7 +79,7 @@ export const ExploreDataa =[
         year:"2025",
         btn:"Explore",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/05-images/lineup-suvs-25-escalade-v-series-l-v2.png?imwidth=1200",
-       link:"https://web3forms.com/#start",
+       Link:"https://web3forms.com/#start",
        data:FaArrowRightLong 
     },
     {
