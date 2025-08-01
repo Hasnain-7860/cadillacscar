@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CiHeart } from "react-icons/ci";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Build2Data, Build3Data, Build4Data, Build5Data, BuildData } from './MockData/data';
@@ -7,6 +7,8 @@ import { div } from 'framer-motion/client';
 
 
 const Build = () => {
+      const [active, setActive] = useState("0");
+    
   return (
     <div>
         <div className='flex flex-col justify-center items-center text-center py-5 lg:py-10'>
@@ -24,16 +26,45 @@ const Build = () => {
                 </div>
             </div>
         </div>
-        <div className='flex gap-9 font-semibold justify-center items-center text-[17px] py-11'>
-            {BuildData.map((data)=>(
-                <div className='' key={data.id}>
-                <div><button>{data.name}</button>
-                </div>
-                </div>
-            ))}
-          
-
-        </div>
+       
+         <div >
+                <ul className=" gap-10 flex pl-3  w-[390px] h-14 items-center text-[25px] overflow-scroll lg:flex lg:w-full lg:gap-5 lg:overflow-auto lg:justify-center lg:items-center  lg:text-[20px] font-semibold">
+        
+                  <li  onClick={()=>{setActive("0")}} className={`px-6  ${active =="0" ? "bg-black text-white": "bg-white text-black"}`}>
+                    <button>
+                      <a >ALL</a>
+                      <p className=''><hr /></p>
+                    </button>
+                   
+                  </li>
+        
+                  <li onClick={()=>{setActive("1")}} className={` px-6  ${active =="1" ? "bg-black text-white": "bg-white text-black"}  `}>
+                    <button>
+                      <a >ELECTRIC</a>
+                    </button>
+                    
+                  </li>
+                  <li onClick={()=>{setActive("2")}} className={` px-6   ${active =="2" ? "bg-black text-white": "bg-white text-black"}`}>
+                    <button>
+                      <a >SUV</a>
+                    </button>
+                  </li>
+        
+                  <li onClick={()=>{setActive("3")}} className={` px-6 ${active =="3" ? "bg-black text-white " : "bg-white text-black " }  `}>
+                    <button>
+                      <a >SEDAN</a>
+                    </button>
+                  </li>
+                  <li onClick={()=>{setActive("4")}} className={` px-6  ${active =="4" ? "bg-black text-white " : "bg-white text-black " }  `}>
+                    <button>
+                      <a >SERIES</a>
+                    </button>
+                  </li>
+                  
+                </ul>
+              </div>
+              {active === "0" && (
+               <div>
         <div className='px-2 py-10 lg:py-0 lg:px-10 '>
             <h1 className='text-[30px] text-blue-900 font-semibold'>ELECTRIC</h1>
             <hr />
@@ -115,6 +146,77 @@ const Build = () => {
 
             <hr />
         </div>
+        </div>)}
+
+         {active==="1" &&(
+        <div className='pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+            {Build2Data.map((data)=>(
+                <div key={data.id} className='flex flex-col justify-center items-center text-center  cursor-pointer group  '>
+                    <img className='transition-transform duration-500 ease-in-out group-hover:scale-110' src={data.img} alt="" />
+                   <div> <h1 className='text-blue-900 font-bold'>{data.year}</h1><p className='hidden lg:block'>________</p>
+                    <h1 className='text-blue-900 font-semibold'>{data.name}</h1>
+                    <p className='text-[14px]'> {data.text}</p>
+                    <hr className='w-[100vw] lg:hidden' />
+                    </div>
+                   
+                </div>
+
+            ))}
+        
+            </div>)}
+
+            {active==="2" &&(
+                 <div className=' py-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+            {Build3Data.map((data)=>(
+                <div key={data.id} className='flex flex-col justify-center items-center text-center cursor-pointer group  '>
+                    <img className='transition-transform duration-500 ease-in-out group-hover:scale-110' src={data.img} alt="" />
+                   <div> <h1 className='text-blue-900 text-[17px] font-semibold'>{data.year}</h1>
+                    <p className='hidden lg:block'>________</p>
+                    <h1 className='text-blue-900 font-semibold'>{data.name}</h1>
+                    <p className='text-[14px]'>{data.text}</p>
+                    <hr className='w-[100vw] lg:hidden' />
+                    </div>
+                </div>
+            ))}
+        
+            </div>
+            )}
+
+            {active==="3" &&(
+                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  '>
+            {Build4Data.map((data)=>(
+                <div key={data.id} className='flex flex-col justify-center items-center text-center cursor-pointer group'>
+                    <img className='transition-transform duration-500 ease-in-out group-hover:scale-110' src={data.img} alt="" />
+                   <div> <h1 className='text-blue-900 text-[17px] font-semibold'>{data.year}</h1>
+                    ________
+                    <h1 className='text-blue-900 font-semibold'>{data.name}</h1>
+                    <p className='text-[14px]'>{data.text}</p>
+                    <hr className='w-[100vw] lg:hidden' />
+
+                    </div>
+                </div>
+            ))}
+        
+            </div>
+            )}
+
+            {active==="4" &&(
+                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 '>
+            {Build5Data.map((data)=>(
+                <div key={data.id} className='flex flex-col justify-center items-center text-center cursor-pointer group '>
+                    <img className='transition-transform duration-500 ease-in-out group-hover:scale-110' src={data.img} alt="" />
+                   <div> <h1 className='text-blue-900 text-[17px] font-semibold'>{data.year}</h1>
+                    ________
+                    <h1 className='text-blue-900 font-semibold'>{data.name}</h1>
+                    <p className='text-[14px]'>{data.text}</p>
+                    <hr className='w-[100vw] lg:hidden' />
+
+                    </div>
+                </div>
+            ))}
+        
+            </div>
+            )}
         
     </div>
   )
