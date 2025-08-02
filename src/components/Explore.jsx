@@ -114,7 +114,7 @@ const Explore = () => {
         <ul
           id="car"
           ref={slider}
-          className="flex w-[600%] overflow-x-hidden  lg:w-[240%]"
+          className="flex w-[400%] overflow-x-hidden  lg:w-[240%]"
         >
           {ExploreDataa.map((data) => (
             <div key={data.id}>
@@ -123,10 +123,10 @@ const Explore = () => {
                 <img src={data.img} alt="" />
                 <div className="flex flex-col items-center">
                   <h1>{data.year}</h1>
-                  ________________
-                  <h1 className="text-[35px] ">{data.name}</h1>
+                  <p className="hidden lg:block">________________</p>
+                  <h1 className="text-[20px] lg:text-[35px] ">{data.name}</h1>
                   <h1> {data.text}</h1>
-                  <button className="text-[30px]">{data.btn}</button>
+                  <button className="text-[15px] lg:text-[30px]">{data.btn}</button>
                 </div>
               </div>
               </NavLink>
@@ -151,7 +151,7 @@ const Explore = () => {
         <ul
           id="car"
           ref={slider}
-          className="flex w-[600%] overflow-x-hidden  lg:w-[240%]"
+          className="flex w-[400%] overflow-x-hidden  lg:w-[240%] pt-10"
         >
           {ExploreDataaa.map((data) => (
             <div key={data.id}>
@@ -160,10 +160,10 @@ const Explore = () => {
                 <img src={data.img} alt="" />
                 <div className="flex flex-col items-center">
                   <h1>{data.year}</h1>
-                  ________________
-                  <h1 className="text-[35px] ">{data.name}</h1>
+                  <p className="hidden lg:block">________________</p>
+                  <h1 className="text-[20px] lg:text-[35px] ">{data.name}</h1>
                   <h1> {data.text}</h1>
-                  <button className="text-[30px]">{data.btn}</button>
+                  <button className="text-[15px] lg:text-[30px]">{data.btn}</button>
                 </div>
               </div>
               </Link>
@@ -182,7 +182,7 @@ const Explore = () => {
     </div>
       )}
       {active === "3" && (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center pt-11">
       <div className="overflow-hidden w-[100vw] md:w-[80%] lg:w-[100%] ">
         <ul
           id="car"
@@ -196,10 +196,10 @@ const Explore = () => {
                 <img src={data.img} alt="" />
                 <div className="flex flex-col items-center">
                   <h1>{data.year}</h1>
-                  ________________
-                  <h1 className="text-[35px] ">{data.name}</h1>
+                  <p className="hidden lg:block">________________</p>
+                  <h1 className="text-[20px] lg:text-[35px] ">{data.name}</h1>
                   <h1> {data.text}</h1>
-                  <button className="text-[30px]">{data.btn}</button>
+                  <button className="text-[15px] lg:text-[30px]">{data.btn}</button>
                 </div>
               </div>
               </Link>
