@@ -3,6 +3,8 @@ import image from '../assets/imgg1.png'
 import image2 from '../assets/imgg2.png'
 import image3 from '../assets/imgg3.png'
 import video from '../assets/video/carvid.mp4'
+import { FunctionData } from './MockData/data'
+import { div, img } from 'framer-motion/client'
 
 
 
@@ -16,10 +18,16 @@ const Home = () => {
             <source src={video}/>
         </video>
         </div>
-        <div className='  grid grid-cols-1 lg:grid-cols-3' >
-            <img src={image} alt="" />
-            <img src={image2} alt="" />
-            <img src={image3} alt="" />
+        <div className='grid grid-cols-1 lg:grid-cols-3 '>
+        {FunctionData.map((data)=>(
+          <div className=' cursor-pointer border border-black hover:border hover:border-white hover:duration-500'>
+          <div key={data.id}>
+           
+            <img src={data.img} alt=""/>
+           
+          </div>
+          </div>
+        ))}
         </div>
     </div>
   )

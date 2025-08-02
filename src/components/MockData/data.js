@@ -4,12 +4,9 @@ import { IoCarSportOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import { FaFirstOrder } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { Link, NavLink } from "react-router-dom";
-import Find from "../Find";
-
-
-
-
+import image from "../../assets/imgg1.png"
+import image2 from "../../assets/imgg2.png"
+import image3 from "../../assets/imgg3.png"
 
 export const ExploreData =[
     {
@@ -19,7 +16,7 @@ export const ExploreData =[
         btn:"Explore",
         img:"https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/lineup/07-images/lineup-suvs-26-escalade-iql-l.png?imwidth=3000",
        Link:"https://web3forms.com/#start",
-       data:FaArrowRightLong 
+       data:FaArrowRightLong
     },
     {
         id:2,
@@ -583,4 +580,17 @@ export const FinanceData = [
         name:"V-SERIES",
     }
  ]
-// ["ELECTRIC","SUCS","SEDANS","V-SERIES"]
+export const FunctionData=[
+    {
+        id:1,
+        img:image
+    },
+    {
+      id:2,
+      img:image2
+    },
+    {
+        id:3,
+        img:image3
+    }
+]
