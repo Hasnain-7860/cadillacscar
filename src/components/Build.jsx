@@ -28,14 +28,13 @@ const Build = () => {
         </div>
        
          <div >
-                <ul className=" gap-10 flex pl-3  w-[390px] h-14 items-center text-[25px] overflow-scroll lg:flex lg:w-full lg:gap-5 lg:overflow-auto lg:justify-center lg:items-center  lg:text-[20px] font-semibold">
+                <ul className=" gap-10 flex pl-3  w-[100vw] h-14 items-center text-[25px] overflow-scroll md:w-[100vw]  lg:flex lg:w-full lg:gap-5 lg:overflow-auto lg:justify-center lg:items-center  lg:text-[20px] font-semibold">
         
                   <li  onClick={()=>{setActive("0")}} className={`px-6  ${active =="0" ? "bg-black text-white": "bg-white text-black"}`}>
                     <button>
                       <a >ALL</a>
                       <p className=''><hr /></p>
                     </button>
-                   
                   </li>
         
                   <li onClick={()=>{setActive("1")}} className={` px-6  ${active =="1" ? "bg-black text-white": "bg-white text-black"}  `}>
@@ -75,7 +74,7 @@ const Build = () => {
                    <div> <h1 className='text-blue-900 font-bold'>{data.year}</h1><p className='hidden lg:block'>________</p>
                     <h1 className='text-blue-900 font-semibold'>{data.name}</h1>
                     <p className='text-[14px]'> {data.text}</p>
-                    <hr className='w-[100vw] lg:hidden' />
+                    <hr className=' block lg:hidden' />
                     </div>
                    
                 </div>
@@ -97,7 +96,7 @@ const Build = () => {
                     <p className='hidden lg:block'>________</p>
                     <h1 className='text-blue-900 font-semibold'>{data.name}</h1>
                     <p className='text-[14px]'>{data.text}</p>
-                    <hr className='w-[100vw] lg:hidden' />
+                    <hr className='block lg:hidden' />
                     </div>
                 </div>
             ))}
@@ -115,7 +114,7 @@ const Build = () => {
                     ________
                     <h1 className='text-blue-900 font-semibold'>{data.name}</h1>
                     <p className='text-[14px]'>{data.text}</p>
-                    <hr className='w-[100vw] lg:hidden' />
+                    <hr className='hidden lg:hidden' />
 
                     </div>
                 </div>
@@ -136,7 +135,7 @@ const Build = () => {
                     ________
                     <h1 className='text-blue-900 font-semibold'>{data.name}</h1>
                     <p className='text-[14px]'>{data.text}</p>
-                    <hr className='w-[100vw] lg:hidden' />
+                    <hr className='block lg:hidden' />
 
                     </div>
                 </div>
@@ -156,7 +155,7 @@ const Build = () => {
                    <div> <h1 className='text-blue-900 font-bold'>{data.year}</h1><p className='hidden lg:block'>________</p>
                     <h1 className='text-blue-900 font-semibold'>{data.name}</h1>
                     <p className='text-[14px]'> {data.text}</p>
-                    <hr className='w-[100vw] lg:hidden' />
+                    <hr className='block lg:hidden' />
                     </div>
                    
                 </div>
@@ -174,7 +173,7 @@ const Build = () => {
                     <p className='hidden lg:block'>________</p>
                     <h1 className='text-blue-900 font-semibold'>{data.name}</h1>
                     <p className='text-[14px]'>{data.text}</p>
-                    <hr className='w-[100vw] lg:hidden' />
+                    <hr className='block lg:hidden' />
                     </div>
                 </div>
             ))}
@@ -191,7 +190,7 @@ const Build = () => {
                     ________
                     <h1 className='text-blue-900 font-semibold'>{data.name}</h1>
                     <p className='text-[14px]'>{data.text}</p>
-                    <hr className='w-[100vw] lg:hidden' />
+                    <hr className='block lg:hidden' />
 
                     </div>
                 </div>
@@ -209,7 +208,7 @@ const Build = () => {
                     ________
                     <h1 className='text-blue-900 font-semibold'>{data.name}</h1>
                     <p className='text-[14px]'>{data.text}</p>
-                    <hr className='w-[100vw] lg:hidden' />
+                    <hr className='block lg:hidden' />
 
                     </div>
                 </div>

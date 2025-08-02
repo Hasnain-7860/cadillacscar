@@ -35,7 +35,7 @@ const Explore = () => {
         </h1>
       </div>
       <div >
-        <ul className=" gap-5 flex pl-3  w-[390px] items-center text-[10px] overflow-scroll lg:flex lg:w-full lg:gap-20 lg:overflow-auto lg:justify-center lg:items-center  lg:text-[20px] font-semibold">
+        <ul className=" gap-5 flex pl-3  w-[390px] items-center text-[10px] overflow-scroll md:w-[100vw] md:overflow-scroll  lg:flex lg:w-full lg:gap-20 lg:overflow-auto lg:justify-center lg:items-center  lg:text-[20px] font-semibold">
 
           <li  onClick={()=>{setActive("0")}} className={` p-4 px-[100px] border-solid border-2 border-black cursor-pointer ${active =="0" ? "bg-black text-white": "bg-white text-black"}`}>
             <button>
@@ -70,12 +70,12 @@ const Explore = () => {
       </div>
 
       {active === "0" && (
-        <div className="flex flex-col justify-center items-center">
-      <div className="overflow-hidden w-[100vw] md:w-[80%] lg:w-[100%] ">
+        <div className=" flex flex-col justify-center items-center w-[100%] ">
+      <div className="overflow-hidden w-[100vw]  lg:w-[100%] ">
         <ul
           id="car"
           ref={slider}
-          className="flex w-[600%] overflow-x-hidden  lg:w-[240%]"
+          className="flex w-[600%] overflow-x-hidden lg:w-[240%]"
         >
           {ExploreData.map((data) => (
             <div key={data.id}>
@@ -110,7 +110,7 @@ const Explore = () => {
 
       {active === "1" && (
           <div className="flex flex-col justify-center items-center">
-      <div className="overflow-hidden w-[100vw] md:w-[80%] lg:w-[100%] ">
+      <div className="overflow-hidden w-[100vw]  lg:w-[100%] ">
         <ul
           id="car"
           ref={slider}
@@ -147,7 +147,7 @@ const Explore = () => {
       )}
       {active === "2" && (
        <div className="flex flex-col justify-center items-center">
-      <div className="overflow-hidden w-[100vw] md:w-[80%] lg:w-[100%] ">
+      <div className="overflow-hidden w-[100vw]  lg:w-[100%] ">
         <ul
           id="car"
           ref={slider}
@@ -183,7 +183,7 @@ const Explore = () => {
       )}
       {active === "3" && (
         <div className="flex flex-col justify-center items-center">
-      <div className="overflow-hidden w-[100vw] md:w-[80%] lg:w-[100%] ">
+      <div className="overflow-hidden w-[100vw]  lg:w-[100%] ">
         <ul
           id="car"
           ref={slider}
